@@ -7,9 +7,11 @@ write R scripts to finish the following two tasks:
 
 1. Map the locations of accidents based on the lat/long and use the United
    States state boundary as the background (the boundary shapefile is in
-   the folder 'Data/US'). Please note the `accident.dbf` can be loaded by
-   the following codes, and there are invalid values for lat/long column
-   that you probably need to clean up before use.  
+   the folder 'Data/US'). The result map should have the basic cartographic
+   elements (e.g., map scale, compass). Please note the `accident.dbf` can
+   be loaded by the following codes, and there are invalid values for
+   lat/long column that you probably need to clean up before use (see the
+   example code in the homework \#2).  
 
 ```{r load, eva=T, echo=T, results='hide'}
 library(foreign)
