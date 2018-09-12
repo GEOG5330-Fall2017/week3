@@ -1,4 +1,4 @@
---
+---
 title: "Homework: Use R as GIS"
 output: github_document
 ---
@@ -11,9 +11,9 @@ write R scripts to finish the following two tasks:
    elements (e.g., map scale, compass). Please note the `accident.dbf` can
    be loaded by the following codes, and there are invalid values for
    lat/long column that you probably need to clean up before use (see the
-   example code in the homework \#2).  
+   example code in the week \#2).  
 
-```{r load, eva=T, echo=T, results='hide'}
+```{r load, eva=T, echo=T}
 library(foreign)
 accident=read.dbf('Data/accident.dbf')
 
@@ -23,12 +23,12 @@ accident=read.dbf('Data/accident.dbf')
 
 ```
 
-2. In the folder 'Data/Texas' contains the boundary of Texas counties.
-   Using the `accident.dbf' data, please count the number of accidents for
-   each county and make a county map based on the value of count you
-   calculated. 
+2. The datasets in the folder 'Data/Texas' contains the boundary of Texas
+   counties. Using the `accident.dbf' data, please count the number of
+   accidents for each county and make a county map based on the value of
+   count you calculated. 
 
-```{r texas, eva=T, echo=T, results='hide'}
+```{r texas, eva=T, echo=T}
 library(foreign)
 accident=read.dbf('Data/accident.dbf')
 
